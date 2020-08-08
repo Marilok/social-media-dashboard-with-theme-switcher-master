@@ -1,87 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
+  <h1>Social Media Dashboard</h1>
+  <p>Total Followers: 23,004</p>
+  <!-- TODO: line -->
   Dark Mode
 
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <!-- TODO: button -->
+  <div class="card">
+    <img src="./images/icon-facebook.svg" alt="facebook icon">
+    <p class="username"></p>@nathanf
+    <p class="count-large">1987</p>
+    <p class="count-label">Followers</p>
+    <p class="count-change positive">12 Today</p>
   </div>
+
+  <div class="card">
+    <img src="./images/icon-twitter.svg" alt="twitter icon">
+    <p class="username"></p>@nathanf
+    <p class="count-large">1044</p>
+    <p class="count-label">Followers</p>
+    <p class="count-change positive">99 Today</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/icon-instagram.svg" alt="instagram icon">
+    <p class="username"></p>@realnathanf
+    <p class="count-large">11k</p>
+    <p class="count-label">Followers</p>
+    <p class="count-change positive">1099 Today</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/icon-youtube.svg" alt="youtube icon">
+    <p class="username">Nathan F.</p>
+    <p class="count-large">8239</p>
+    <p class="count-label">Subscribers</p>
+    <p class="change negative">144 Today</p>
+  </div>
+
+
+
+  <h2>Overview - Today</h2>
+
+  <p class="count-likes">Page Views</p>
+  <p class="count-small negative">87</p>
+  <p class="change positive">3%</p>
+
+  <p class="count-likes">Likes</p>
+  <p class="count-small">52</p>
+  <p class="change positive">2%</p>
+
+  <p class="count-likes">Likes</p>
+  <p class="count-small">5462</p>
+  <p class="change positive">2257%</p>
+
+  <p class="count-likes">Profile Views</p>
+  <p class="count-small">52k</p>
+  <p class="change">1375%</p>
+
+  <p class="count-likes">Retweets</p>
+  <p class="count-small"></p>117
+  <p class="change positive">303%</p>
+
+  <p class="count-likes">Likes</p>
+  <p class="count-small">507</p>
+  <p class="change positive">553%</p>
+
+  <p class="count-likes">Likes</p>
+  <p class="count-small">107</p>
+  <p class="change positive">19%</p>
+
+  <p class="count-likes">Total Views</p>
+  <p class="count-small negative">1407</p>
+  <p class="change negative">12%</p>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
 </body>
+
 </html>
