@@ -4,104 +4,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body>
+<body class="">
 
-  <h1>Social Media Dashboard</h1>
-  <p>Total Followers: 23,004</p>
-  <!-- TODO: line -->
-  Dark Mode
+  </div>
+  <header>
+<div>
 
-  <!-- TODO: button -->
-  <div class="card">
-    <img src="./images/icon-facebook.svg" alt="facebook icon">
-    <p class="username"></p>@nathanf
-    <p class="count-large">1987</p>
-    <p class="count-label">Followers</p>
-    <p class="count-change positive">12 Today</p>
+    <h1 class="bold color-2">Social Media Dashboard</h1>
+    <p class="bold color-1">Total Followers: 23,004</p>
+    <hr>
   </div>
 
-  <div class="card">
-    <img src="./images/icon-twitter.svg" alt="twitter icon">
-    <p class="username"></p>@nathanf
-    <p class="count-large">1044</p>
-    <p class="count-label">Followers</p>
-    <p class="count-change positive">99 Today</p>
-  </div>
+    <div class="switch-wrap">
 
-  <div class="card">
-    <img src="./images/icon-instagram.svg" alt="instagram icon">
-    <p class="username"></p>@realnathanf
-    <p class="count-large">11k</p>
-    <p class="count-label">Followers</p>
-    <p class="count-change positive">1099 Today</p>
-  </div>
+      <p class="bold color-1">Dark Mode</p>
 
-  <div class="card">
-    <img src="./images/icon-youtube.svg" alt="youtube icon">
-    <p class="username">Nathan F.</p>
-    <p class="count-large">8239</p>
-    <p class="count-label">Subscribers</p>
-    <p class="change negative">144 Today</p>
-  </div>
+      <label class="switch">
+        <input type="checkbox" onchange="switchTheme()">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="card facebook">
+      <div class="icon-wrap">
+        <img src="./images/icon-facebook.svg" class="icon-logo" alt="facebook icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="">
+        <p class="count-large">1987</p>
+        <p class="count-label">Followers</p>
+      </div>
+      <div class="icon-wrap">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">12 Today</p>
+      </div>
+    </div>
+
+    <div class="card twitter">
+      <div class="icon-wrap">
+        <img src="./images/icon-twitter.svg" class="icon-logo" alt="twitter icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="">
+        <p class="count-large">1044</p>
+        <p class="count-label">Followers</p>
+      </div>
+      <div class="icon-wrap">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">99 Today</p>
+      </div>
+    </div>
+
+    <div class="card instagram">
+      <div class="icon-wrap">
+        <img src="./images/icon-instagram.svg" class="icon-logo" alt="instagram icon">
+        <p class="username">@realnathanf</p>
+      </div>
+      <div class="">
+        <p class="count-large">11k</p>
+        <p class="count-label">Followers</p>
+      </div>
+      <div class="icon-wrap">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">1099 Today</p>
+      </div>
+    </div>
+
+    <div class="card youtube">
+      <div class="icon-wrap">
+        <img src="./images/icon-youtube.svg" class="icon-logo" alt="youtube icon">
+        <p class="username">Nathan F.</p>
+      </div>
+      <div class="">
+        <p class="count-large">8239</p>
+        <p class="count-label">Subscribers</p>
+      </div>
+      <div class="icon-wrap">
+        <img src="./images/icon-down.svg" class="icon" alt="arrow icon up">
+        <p class="change negative">144 Today</p>
+      </div>
+    </div>
+
+  </main>
+
+  <aside class="">
+
+    <h2 class="overview" style="width: 100%  ;"  >Overview - Today</h2>
+
+    <div class="card-small">
+        <p class="count-likes">Page Views</p>
+        <img src="./images/icon-facebook.svg" class="icon-logo logo-2" alt="facebook icon">
+
+        <p class="count-small">87</p>
+        <div class="icon-wrap icon-3">
+          <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+          <p class="change positive">3%</p>
+        </div>
+    </div>
+
+    <div class="card-small">
+
+      <p class="count-likes">Likes</p>
+      <img src="./images/icon-facebook.svg" class="icon-logo logo-2" alt="facebook icon">
 
 
+      <p class="count-small">52</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-down.svg" class="icon" alt="arrow icon down">
+        <p class="change negative">2%</p>
+      </div>
+    </div>
 
-  <h2>Overview - Today</h2>
+    <div class="card-small">
+        <p class="count-likes">Likes</p>
+        <img src="./images/icon-instagram.svg" class="icon-logo logo-2" alt="instagram icon">
 
-  <p class="count-likes">Page Views</p>
-  <p class="count-small negative">87</p>
-  <p class="change positive">3%</p>
+      <p class="count-small">5462</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">2257%</p>
+      </div>
+    </div>
 
-  <p class="count-likes">Likes</p>
-  <p class="count-small">52</p>
-  <p class="change positive">2%</p>
+    <div class="card-small">
+        <p class="count-likes">Profile Views</p>
+        <img src="./images/icon-instagram.svg" class="icon-logo logo-2" alt="instagram icon">
 
-  <p class="count-likes">Likes</p>
-  <p class="count-small">5462</p>
-  <p class="change positive">2257%</p>
+      <p class="count-small">52k</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">1375%</p>
+      </div>
+    </div>
 
-  <p class="count-likes">Profile Views</p>
-  <p class="count-small">52k</p>
-  <p class="change">1375%</p>
+    <div class="card-small">
 
-  <p class="count-likes">Retweets</p>
-  <p class="count-small"></p>117
-  <p class="change positive">303%</p>
+        <p class="count-likes">Retweets</p>
+        <img src="./images/icon-twitter.svg" class="icon-logo logo-2" alt="twitter icon">
 
-  <p class="count-likes">Likes</p>
-  <p class="count-small">507</p>
-  <p class="change positive">553%</p>
 
-  <p class="count-likes">Likes</p>
-  <p class="count-small">107</p>
-  <p class="change positive">19%</p>
+      <p class="count-small">117</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">303%</p>
+      </div>
+    </div>
 
-  <p class="count-likes">Total Views</p>
-  <p class="count-small negative">1407</p>
-  <p class="change negative">12%</p>
+    <div class="card-small">
+        <p class="count-likes">Likes</p>
+        <img src="./images/icon-twitter.svg" class="icon-logo logo-2" alt="twitter icon">
+
+      <p class="count-small">507</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-up.svg" class="icon" alt="arrow icon up">
+        <p class="change positive">553%</p>
+      </div>
+    </div>
+
+    <div class="card-small">
+        <p class="count-likes">Likes</p>
+        <img src="./images/icon-youtube.svg" class="icon-logo logo-2" alt="youtube icon">
+
+      <p class="count-small">107</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-down.svg" class="icon" alt="arrow icon down">
+        <p class="change negative">19%</p>
+      </div>
+    </div>
+
+    <div class="card-small">
+        <p class="count-likes">Total Views</p>
+        <img src="./images/icon-youtube.svg" class="icon-logo logo-2" alt="youtube icon">
+
+      <p class="count-small">1407</p>
+      <div class="icon-wrap icon-3">
+        <img src="./images/icon-down.svg" class="icon" alt="arrow icon down">
+        <p class="change negative">12%</p>
+      </div>
+    </div>
+  </aside>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
-
+<script>
+function switchTheme() {
+document.body.classList.toggle("darkTheme");
+}
+</script>
 </html>
